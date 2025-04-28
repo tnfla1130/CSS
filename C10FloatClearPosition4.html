@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container {
+            position: relative;
+        }
+        img { 
+            width: 100%;
+            height: auto;
+            opacity: 0.3;
+        }
+        div.topleft {
+            position: absolute;
+            top: 10px; left:10px;
+        }
+        div.topright {
+            position: absolute;
+            top: 10px; right:10px;
+        }
+        div.centered {
+            position: absolute;
+            /* 방법1 */
+            /* top: 50%; right:50%;
+            text-align: center; */
+            /* bottom: 50%; left:50%; */
+            /* 방법2 */
+            width: 100%; text-align: center;top: 50%;
+        }
+        div.bottomright {
+            position: absolute;
+            bottom: 10px; right:10px;
+        }
+        div.bottomleft {
+            position: absolute;
+            bottom: 10px; left:10px;
+        }
+        </style>
+        <div class="container">
+            <img src="./images/img_5terre_wide.jpg" width="1000" height="300">
+            <div class="topleft">Top Left</div>
+            <div class="topright">Top Right</div>
+            <div class="centered">centered</div>
+            <div class="bottomleft">bottom Left</div>
+            <div class="bottomright">bottom Right</div>
+        </div> 
+    
+</body>
+</html>
